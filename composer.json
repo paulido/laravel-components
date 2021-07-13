@@ -1,0 +1,28 @@
+{
+    "name": "paulido/components",
+    "description": "this is a components package",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Ido",
+            "email": "paulido92@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Paulido\\Components\\": "src",
+            "Paulido\\Views\\": "resources/views",
+            "Paulido\\Views\\Components\\": "resources/views/components"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Paulido\\Components\\Providers\\ComponentServiceProvider"
+            ]
+        }
+    }
+}
