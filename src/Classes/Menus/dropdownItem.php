@@ -23,6 +23,6 @@ class dropdownItem extends Component
      */
     public function render()
     {
-        return view('components.menus.dropdown-item');
+        return view('ui.menus.dropdown-item');
     }
 }

@@ -23,6 +23,6 @@ class dropdown extends Component
      */
     public function render()
     {
-        return view('components.menus.dropdown');
+        return view('ui.menus.dropdown');
     }
 }

@@ -28,6 +28,6 @@ class Top extends Component
      */
     public function render()
     {
-        return view('components.modals.top');
+        return view('ui.modals.top');
     }
 }

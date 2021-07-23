@@ -27,6 +27,6 @@ class Dismiss extends Component
      */
     public function render()
     {
-        return view('components.alerts.dismiss');
+        return view('ui.alerts.dismiss');
     }
 }

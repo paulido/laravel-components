@@ -25,6 +25,6 @@ class navbar extends Component
      */
     public function render()
     {
-        return view('components.navbars.navbar');
+        return view('ui.navbars.navbar');
     }
 }

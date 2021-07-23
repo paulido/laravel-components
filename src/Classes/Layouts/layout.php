@@ -24,6 +24,6 @@ class layout extends Component
      */
     public function render()
     {
-        return view('components.layouts.layout');
+        return view('ui.layouts.layout');
     }
 }

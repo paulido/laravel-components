@@ -25,7 +25,7 @@ class Danger extends Component
     {
         // return view('<button type="button" class="btn btn-block btn-danger">Danger</button>');
 
-       return view('components::buttons.danger');
+       return view('ui::buttons.danger');
 
     //     return <<<'blade'
     //       <button type="button" class="btn btn-block btn-danger">Danger</button>

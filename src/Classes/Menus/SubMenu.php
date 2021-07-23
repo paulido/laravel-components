@@ -28,6 +28,6 @@ class SubMenu extends Component
      */
     public function render()
     {
-        return view('components.menus.sub-menu');
+        return view('ui.menus.sub-menu');
     }
 }

@@ -23,6 +23,6 @@ class dropdownLink extends Component
      */
     public function render()
     {
-        return view('components.menus.dropdown-link');
+        return view('ui.menus.dropdown-link');
     }
 }

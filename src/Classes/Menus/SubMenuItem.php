@@ -27,6 +27,6 @@ class SubMenuItem extends Component
      */
     public function render()
     {
-        return view('components.menus.sub-menu-item');
+        return view('ui.menus.sub-menu-item');
     }
 }

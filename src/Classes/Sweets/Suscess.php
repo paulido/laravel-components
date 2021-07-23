@@ -23,6 +23,6 @@ class Suscess extends Component
      */
     public function render()
     {
-        return view('components.sweets.suscess');
+        return view('ui.sweets.suscess');
     }
 }
