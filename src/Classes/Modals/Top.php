@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Modals;
+namespace Paulido\Ui\Classes\Modals;
 
 use Illuminate\View\Component;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Cards;
+namespace Paulido\Ui\Classes\Cards;
 
 use Illuminate\View\Component;
 
@@ -8,16 +8,18 @@ class card extends Component
 {
     public $title;
     public $btn;
+    public $btnid;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($title, $btn)
+    public function __construct($title, $btn, $btnid = 'btn-id')
     {
 
         $this->title = $title;
         $this->btn = $btn;
+        $this->btnid = $btnid;
     }
 
     /**

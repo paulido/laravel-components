@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Sidebars;
+namespace Paulido\Ui\Classes\Sidebars;
 
 use Illuminate\View\Component;
 

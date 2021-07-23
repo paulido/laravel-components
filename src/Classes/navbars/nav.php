@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\navbars;
+namespace Paulido\Ui\Classes\navbars;
 
 use Illuminate\View\Component;
 

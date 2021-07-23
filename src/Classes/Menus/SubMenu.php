@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Menus;
+namespace Paulido\Ui\Classes\Menus;
 
 use App\Models\r;
 use Illuminate\View\Component;

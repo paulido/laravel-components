@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Layouts;
+namespace Paulido\Ui\Classes\Layouts;
 
 use Illuminate\View\Component;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Badges;
+namespace Paulido\Ui\Classes\Badges;
 
 use Illuminate\View\Component;
 

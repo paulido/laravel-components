@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Buttons;
+namespace Paulido\Ui\Classes\Buttons;
 
 use Illuminate\View\Component;
 

@@ -1,5 +1,5 @@
 {
-    "name": "paulido/components",
+    "name": "paulido/ui",
     "description": "this is a components package",
     "type": "project",
     "license": "MIT",
@@ -15,13 +15,13 @@
         "psr-4": {
             "Paulido\\Components\\": "src",
             "Paulido\\Views\\": "resources/views",
-            "Paulido\\Views\\Components\\": "resources/views/components"
+            "Paulido\\Views\\Components\\": "resources/views/ui"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Paulido\\Components\\Providers\\ComponentServiceProvider"
+                "Paulido\\Ui\\Providers\\UiServiceProvider"
             ]
         }
     }

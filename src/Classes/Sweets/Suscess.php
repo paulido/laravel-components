@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Sweets;
+namespace App\View\Ui\Sweets;
 
 use Illuminate\View\Component;
 

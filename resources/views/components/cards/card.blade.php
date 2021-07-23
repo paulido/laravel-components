@@ -4,6 +4,6 @@
       {{$slot}}
     </div>
     <div class="card-footer mycard-footer">
-        <button class="btn btn-primary float-right {{$btn ?? ''}}" type="submit">Enregistrer</button>
+        <!-- <button class="btn btn-primary float-right {{$btn ?? ''}}" type="submit" onclick='$(this).closest("form").submit();'>Enregistrer</button> -->
     </div>
 </div>

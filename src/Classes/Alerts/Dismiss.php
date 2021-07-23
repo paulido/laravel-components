@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Alerts;
+namespace Paulido\Ui\Classes\Alerts;
 
 use Illuminate\View\Component;
 

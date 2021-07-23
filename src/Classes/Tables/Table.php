@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Components\Classes\Tables;
+namespace Paulido\Ui\Classes\Tables;
 
 use Illuminate\View\Component;
 
