@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Ui\Sweets;
+namespace App\View\Paulido\Ui\Sweets;
 
 use Illuminate\View\Component;
 
