@@ -1,6 +1,6 @@
 <?php
 
-namespace Paulido\Ui\Classes\Input;
+namespace Paulido\Ui\Classes\Inputs;
 
 use Illuminate\View\Component;
 

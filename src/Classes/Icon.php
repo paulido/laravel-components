@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Ui;
+namespace Paulido\Ui\Icons;
 
 use Illuminate\View\Component;
 
