@@ -4,7 +4,37 @@ namespace Paulido\Ui\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
-use Paulido\Ui\Classes\Danger;
+// use Paulido\Ui\Classes\Buttons\Danger;
+use Paulido\Ui\View\Components\Danger;
+use Paulido\Ui\View\Components\Success;
+use Paulido\Ui\View\Components\SuccessLink;
+use Paulido\Ui\View\Components\DangerLink;
+use Paulido\Ui\View\Components\Card; 
+use Paulido\Ui\View\Components\Footer; 
+use Paulido\Ui\View\Components\AccordionContainer; 
+use Paulido\Ui\View\Components\AccordionCard; 
+use Paulido\Ui\View\Components\AccordionCard2; 
+use Paulido\Ui\View\Components\Center;
+use Paulido\Ui\View\Components\Select;
+use Paulido\Ui\View\Components\Select2;
+use Paulido\Ui\View\Components\Alert;
+use Paulido\Ui\View\Components\BtnIcon;
+use Paulido\Ui\View\Components\Dropdown;
+use Paulido\Ui\View\Components\Dropdown2;
+use Paulido\Ui\View\Components\DropdownItem;
+use Paulido\Ui\View\Components\DropdownLink;
+use Paulido\Ui\View\Components\Input;
+use Paulido\Ui\View\Components\Input2;
+use Paulido\Ui\View\Components\Nav;
+use Paulido\Ui\View\Components\Navitem;
+use Paulido\Ui\View\Components\Navicon;
+use Paulido\Ui\View\Components\Navbar;
+use Paulido\Ui\View\Components\SideBar;
+use Paulido\Ui\View\Components\SubMenu;
+use Paulido\Ui\View\Components\SubMenuItem;
+use Paulido\Ui\View\Components\Table;
+use Paulido\Ui\View\Components\Top;
+use Paulido\Ui\View\Components\TopLogin;
 
 
 class UiServiceProvider extends ServiceProvider
@@ -27,10 +57,70 @@ class UiServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/../../routes/routes.php');
-        // Blade::componentNamespace('Paulido\\Views\\Components', 'paulido');
+        // Blade::componentNamespace('Paulido\\Views\\Components', 'ui');
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'ui');
+        $this->loadViewsFrom(__DIR__.'/../../resources/views/components/buttons', 'ui');
+        // $this->loadViewComponentsAs('ui', [
+        //     Danger2::class,
+        //     Card::class,
+        //     Input::class,
+        //     Nav::class,
+        //     Navbar::class,
+        //     Sidebar::class,
+        //     Success::class,
+        //     Dismiss::class,
+        //     SubMenu::class,
+        //     SubMenuItem::class,
+        //     Dropdown::class,
+        //     DropdownItem::class,
+        //     DropdownLink::class,
+        //     Table::class,
+        //     Top::class,
+        // ]);
+        Blade::component('btn-danger', Danger::class);
+        Blade::component('input', Input::class);
+        Blade::component('input2', Input2::class);
+        Blade::component('card', Card::class);
+        Blade::component('footer', Footer::class);
+        Blade::component('accordions', AccordionContainer::class);
+        Blade::component('accordion', AccordionCard::class);
+        Blade::component('accordion2', AccordionCard2::class);
+        Blade::component('select', Select::class);
+        Blade::component('select2', Select2::class);
+        Blade::component('center', Center::class);
+        Blade::component('btn-success', Success::class);
+        Blade::component('btn-icon', BtnIcon::class);
+        Blade::component('btn-success-link', SuccessLink::class);
+        Blade::component('btn-danger-link', DangerLink::class);
+        Blade::component('alert', Alert::class);
+        Blade::component('dropdown', Dropdown::class);
+        Blade::component('dropdown2', Dropdown2::class);
+        Blade::component('submenu', SubMenu::class);
+        Blade::component('submenuitem', SubMenuItem::class);
+        Blade::component('dropdownitem', DropdownItem::class);
+        Blade::component('dropdownlink', DropdownLink::class);
+        Blade::component('nav', Nav::class);
+        Blade::component('navitem', Navitem::class);
+        Blade::component('navicon', Navicon::class);
+        Blade::component('navbar', Navbar::class);
+        Blade::component('sidebar', SideBar::class);
+        Blade::component('table', Table::class);
+        Blade::component('modal', Top::class);
+        Blade::component('modal-login', TopLogin::class);
+
         // include __DIR__.'/routes.php';
-        // Blade::component('package-danger', Danger::class);
         // Blade::component('picon', Icon::class);
+
+        $this->publishes([
+            __DIR__.'/../../resources/assets/css' => public_path('css'),
+        ], 'css');
+
+        $this->publishes([
+            __DIR__.'/../../resources/assets/js' => public_path('js'),
+        ], 'js');
+
+        $this->publishes([
+            __DIR__.'/../../resources/views/components/layouts' => resource_path('views/components'),
+        ], 'layouts');
     }
 }

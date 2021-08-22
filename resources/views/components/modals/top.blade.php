@@ -11,8 +11,8 @@
          {{$slot}}
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" id="btn-close" data-dismiss="modal">{{__('Close')}}</button>
-        <button type="button" class="btn btn-danger" id="modal-confirm">{{__('Confirm')}}</button>
+        <button type="button" class="btn btn-secondary" id="btn-close" data-dismiss="modal">{{__($textleft)}}</button>
+        <button type="{{$type}}" {{ $attributes->merge(['class' => 'btn btn-danger btn-modal-confirm']) }} id="btn-modal-confirm">{{__($textright)}}</button>
       </div>
     </div>
   </div>

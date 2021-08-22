@@ -1,4 +1,7 @@
 
-
-@props(['size' => 'sm', 'texte', 'data' => 'null'])
-<button type="button" class="btn btn-block btn-outline-warning btn-flat btn-{{$size}}" data="{{$data}}">{{$texte}}</button>
+<button type="button" class="btn btn-block btn-outline-warning">@if($icon == ''){{$text}}@endif
+    @isset($icon)
+        <i class="fas fa-{{$icon}}"></i>
+        <span>{{$text}}p</span>
+    @endisset
+</button>

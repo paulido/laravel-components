@@ -1,9 +1,9 @@
-<div class="card mycard">
-    <div class="card-header mycard-header">{{$title}}</div>
+<div {{ $attributes->merge(['class' => 'card'])}}>
+    <div class="card-header mycard-header"><h1>{{$title}}</h1></div>
     <div class="card-body">
       {{$slot}}
     </div>
     <div class="card-footer mycard-footer">
-        <!-- <button class="btn btn-primary float-right {{$btn ?? ''}}" type="submit" onclick='$(this).closest("form").submit();'>Enregistrer</button> -->
+        @if($submit)<button class="btn btn-{{$btnStyle}} float-right" type="submit" id="{{$btnId}}">{{$text}}</button>@endif
     </div>
 </div>

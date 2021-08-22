@@ -40,7 +40,6 @@
 
 <body>
 
-<x-sidebars.side-bar></x-sidebars.side-bar>
 <x-navbars.navbar toggle="false">
     <x-navbars.nav>
         <li><x-menus.dropdown>
