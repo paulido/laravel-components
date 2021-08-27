@@ -87,10 +87,13 @@ class InstallComponent extends Command
             file_put_contents(app_path("View/Components/{$component}.php"), $result);
         }
         catch(Exception $e){
-            return $this->info('Imposible de trouver le composant spécifié ? ou le composant ne possède pas de classe');
+            
+            $this->info('Imposible de trouver le composant spécifié ? ou le composant ne possède pas de classe');
         }
 
         $files = glob(__DIR__."/../../resources/views/components/*/{$component2}.blade.php");
+        if(sizeof($files) == 0)
+           return "Imposible de trouver le composant {$component}";
         $blade = file($files[0]);
         file_put_contents(resource_path("views/components/{$component2}.blade.php"), $blade);
         $this->info( "Component {$component} installed");
