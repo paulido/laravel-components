@@ -72,7 +72,7 @@ class InstallComponent extends Command
             }        
             $result = '';
             $namespace = 'namespace App\View\Components;';
-            $view = "\t\t return view('$component2');\n";
+            $view = "\t\t return view('components.$component2');\n";
             foreach($lines as $line) {
             if(str_contains($line, 'namespace')) {
                 $result .= $namespace."\n";
