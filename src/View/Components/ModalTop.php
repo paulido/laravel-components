@@ -4,7 +4,7 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class Top extends Component
+class ModalTop extends Component
 {
    
    

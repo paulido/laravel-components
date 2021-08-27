@@ -4,7 +4,7 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class AccordionContainer extends Component
+class Accordions extends Component
 {
 
     public $id;
@@ -25,6 +25,6 @@ class AccordionContainer extends Component
      */
     public function render()
     {
-        return view('ui::components.accordions.container');
+        return view('ui::components.accordions.accordions');
     }
 }

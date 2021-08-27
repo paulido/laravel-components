@@ -4,19 +4,23 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class Success extends Component
+class Btn extends Component
 {
     public $text;
     public $icon;
+    public $type;
+    public $outline;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($text = 'Success', $icon = null)
+    public function __construct($text = 'Button', $type = 'success', $icon = null, $outline = false)
     {
         $this->text = $text;
         $this->icon = $icon;
+        $this->type = $type;
+        $this->outline = $outline;
     }
 
 
@@ -27,11 +31,11 @@ class Success extends Component
      */
     public function render()
     {
-        // return view('<button type="button" class="btn btn-block btn-Success">Success</button>');
-       return view('ui::components.buttons.success');
+        // return view('<button type="button" class="btn btn-block btn-danger">Danger</button>');
+       return view('ui::components.buttons.btn');
 
     //     return <<<'blade'
-    //       <button type="button" class="btn btn-block btn-Success">Success</button>
+    //       <button type="button" class="btn btn-block btn-danger">Danger</button>
     //    blade;
     }
 }

@@ -4,7 +4,7 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class AccordionCard extends Component
+class Accordion extends Component
 {
 
     public $text;

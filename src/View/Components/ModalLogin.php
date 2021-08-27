@@ -4,7 +4,7 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class TopLogin extends Component
+class ModalLogin extends Component
 {
    
    

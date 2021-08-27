@@ -4,24 +4,20 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class AccordionCard2 extends Component
+class AlertDismiss extends Component
 {
 
+    public $type;
     public $text;
-    public $parent;
-    public $collapse;
-    public $header;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($parent = 'accordion1', $header, $collapse, $text = '')
+    public function __construct($type = "success", $text)
     {
+        $this->type = $type;
         $this->text = $text;
-        $this->parent = $parent;
-        $this->header = $header;
-        $this->collapse = $collapse;
     }
 
     /**
@@ -31,6 +27,6 @@ class AccordionCard2 extends Component
      */
     public function render()
     {
-        return view('ui::components.accordions.card-accordion2');
+        return view('ui::components.alerts.alert');
     }
 }
