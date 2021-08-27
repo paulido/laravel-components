@@ -4,7 +4,7 @@ namespace Paulido\Ui\View\Components;
 
 use Illuminate\View\Component;
 
-class SideBar extends Component
+class Sidebar extends Component
 {
     public $text;
     public $logo;
@@ -28,6 +28,6 @@ class SideBar extends Component
      */
     public function render()
     {
-        return view('ui::components.sidebars.side-bar');
+        return view('ui::components.sidebars.sidebar');
     }
 }

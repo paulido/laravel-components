@@ -7,6 +7,7 @@ use Illuminate\View\Component;
 class BtnLink extends Component
 {
     public $text;
+    public $type;
     public $icon;
     public $route;
     public $outline;
@@ -15,12 +16,13 @@ class BtnLink extends Component
      *
      * @return void
      */
-    public function __construct($text = 'Danger', $icon = null, $route = '#', $outline = false)
+    public function __construct($text = 'Danger', $icon = null, $route = '#', $outline = false, $type = '')
     {
         $this->text = $text;
         $this->icon = $icon;
         $this->route = $route;
         $this->outline = $outline;
+        $this->type = $type;
     }
 
 

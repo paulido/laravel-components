@@ -24,7 +24,7 @@ use Paulido\Ui\View\Components\Nav;
 use Paulido\Ui\View\Components\Navitem;
 use Paulido\Ui\View\Components\Navicon;
 use Paulido\Ui\View\Components\Navbar;
-use Paulido\Ui\View\Components\SideBar;
+use Paulido\Ui\View\Components\Sidebar;
 use Paulido\Ui\View\Components\Menu;
 use Paulido\Ui\View\Components\MenuItem;
 use Paulido\Ui\View\Components\Table;
@@ -97,7 +97,7 @@ class UiServiceProvider extends ServiceProvider
         Blade::component('navitem', Navitem::class);
         Blade::component('navicon', Navicon::class);
         Blade::component('navbar', Navbar::class);
-        Blade::component('sidebar', SideBar::class);
+        Blade::component('sidebar', Sidebar::class);
         Blade::component('table', Table::class);
         Blade::component('modal-top', ModalTop::class);
         Blade::component('modal-login', ModalLogin::class);

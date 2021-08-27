@@ -35,6 +35,6 @@ class ModalTop extends Component
      */
     public function render()
     {
-        return view('ui::components.modals.top');
+        return view('ui::components.modal-top');
     }
 }
