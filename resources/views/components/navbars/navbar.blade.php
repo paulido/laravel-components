@@ -12,8 +12,8 @@
   @endif
     <div class="container-fluid">
             @if($sidebar)<button type="button" id="sidebarCollapse" class="btn">
-              <i class=" d-none d-md-inline fa fa-{{$icon}}"></i>
-              <i class=" d-md-none fa fa-arrow-left"></i>
+              <i class=" d-none d-lg-inline fa fa-{{$icon}}"></i>
+              <i class=" d-lg-none fa fa-arrow-left"></i>
             </button>
             @endif
         {{$slot}}

@@ -30,7 +30,7 @@ class BtnIcon extends Component
     public function render()
     {
         // return view('<button type="button" class="btn btn-block btn-Success">Success</button>');
-       return view('ui::components.buttons.icon');
+       return view('ui::components.buttons.btn-icon');
 
     //     return <<<'blade'
     //       <button type="button" class="btn btn-block btn-Success">Success</button>

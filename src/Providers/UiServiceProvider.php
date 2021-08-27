@@ -35,6 +35,8 @@ use Paulido\Ui\View\Components\SubMenuItem;
 use Paulido\Ui\View\Components\Table;
 use Paulido\Ui\View\Components\Top;
 use Paulido\Ui\View\Components\TopLogin;
+use Paulido\Ui\Console\InstallComponent;
+use Paulido\Ui\Console\InstallComponent2;
 
 
 class UiServiceProvider extends ServiceProvider
@@ -122,5 +124,16 @@ class UiServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../../resources/views/components/layouts' => resource_path('views/components'),
         ], 'layouts');
+        
+        $this->publishes([
+            __DIR__.'/../../resources/views/components/layouts' => resource_path('views/components'),
+        ], 'layouts');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                InstallComponent::class,
+                InstallComponent2::class,
+            ]);
+        }
     }
 }
