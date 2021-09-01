@@ -16,13 +16,13 @@ class Select extends Component
      *
      * @return void
      */
-    public function __construct($name, $d = null, $label, $selected = null)
+    public function __construct($name, $d = null, $label, $selected = 0)
     {
 
         $this->name = $name;
         $this->d = $d;
         $this->label = $label;
-        $this->selected = $selected;
+        $this->selected = intval($selected);
 
     }
 
