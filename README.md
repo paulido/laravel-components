@@ -14,7 +14,3 @@ Laravel Components is a comprehensive package designed for Laravel applications.
 - table
 - badge
 - footer 
-
-## install
-to install the package in a laravel project
-## usage
